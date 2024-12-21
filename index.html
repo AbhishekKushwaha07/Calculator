@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        #calculator
+        {
+            border: 5px solid rgb(33, 178, 227);
+            width: 300px;
+            background-color: rgb(28, 27, 73);
+        }
+        .btn
+        {
+           width: 45px;
+           height: 45px;
+            margin: 16px;
+         background-color: rgb(70, 138, 210);
+         color: aliceblue;   
+        }
+        #d2
+        {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        #display
+        {
+            width: 85%;
+            margin: 19px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div id="d2">
+            <button class="btn" onclick="defultValue='';
+            document.querySelector('#display').value=defultValue;">c</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'1';
+            document.querySelector('#display').value=defultValue;">1</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'2';
+            document.querySelector('#display').value=defultValue;">2</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'+';
+            document.querySelector('#display').value=defultValue;">+</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'3';
+            document.querySelector('#display').value=defultValue;">3</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'4';
+            document.querySelector('#display').value=defultValue;">4</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'-';
+            document.querySelector('#display').value=defultValue;">-</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'5';
+            document.querySelector('#display').value=defultValue;">5</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'6';
+            document.querySelector('#display').value=defultValue;">6</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'*';
+            document.querySelector('#display').value=defultValue;">*</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'7';
+            document.querySelector('#display').value=defultValue;">7</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'8';
+            document.querySelector('#display').value=defultValue;">8</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'/';
+            document.querySelector('#display').value=defultValue;">/</button>
+
+            <button class="btn" onclick="defultValue=eval(defultValue);
+            document.querySelector('#display').value=defultValue;">=</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'9';
+            document.querySelector('#display').value=defultValue;">9</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'0';
+            document.querySelector('#display').value=defultValue;">0</button>
+
+            <button class="btn" onclick="defultValue=defultValue+'.';
+            document.querySelector('#display').value=defultValue;">.</button>
+        </div>
+    </div>
+    <script>
+        let defultValue="";
+        document.querySelector("#display").value=defultValue;
+    </script>
+</body>
+</html>
